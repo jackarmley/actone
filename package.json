@@ -1,13 +1,13 @@
 {
-    "name": "Gender-Equality-Hackathon",
+    "name": "Act One",
     "version": "0.0.1",
-    "description": "Proof of Concept for Gender Equality Hackathon",
-    "author": "Jenny, Kabu, Nik, Jack",
+    "description": "Proof of Concept",
+    "author": "Raluca, Jack, Maya, Matt",
     "private": false,
     "licence": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/begleynk/gender-equality-hackathon"
+        "url": "https://github.com/jackarmley/actone"
     },
     "dependencies": {
         "gulp": "3.9.0",
