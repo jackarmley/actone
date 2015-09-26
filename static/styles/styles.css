@@ -880,7 +880,7 @@ html {
 .filter {
 	position: relative;
 	width: auto;
-	max-width: 60rem;
+	max-width: 80rem;
 	margin: auto;
 	padding: 4rem 2rem;
 	color: #fddcce;
@@ -905,7 +905,19 @@ html {
 
 .filter-label {
 	font-size: 1.5em;
+	margin-bottom: 0;
+	padding: 1rem;
 	font-weight: bold;
+}
+
+.filter-label[for='filter-time'] {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.filter-label[for='filter-time']+input {
+	display: inline-block;
+	width: 15rem;
 }
 
 .filter-group {
@@ -923,7 +935,30 @@ html {
 }
 
 .filter-section--select-skill {
+	position: relative;
 	display: none;
+}
+
+.filter-section--select-skill:before {
+	width: 3rem;
+	height: 3rem;
+	content: ' ';
+	position: absolute;
+	top: 4rem;
+	right: 3rem;
+	display: block;
+	background: url("../icons/arrow-keyline-down.svg") no-repeat center center/contain;
+}
+
+.filter-section--select-skill select {
+	font-size: 1.5em;
+	margin: 0;
+	padding: 2rem;
+	border: 0.2rem solid #ae1a42;
+	-webkit-appearance: none;
+	background: #fddcce;
+	color: #c41d4a;
+	font-weight: bold;
 }
 
 .filter-section--select-skill.state--active {
@@ -939,7 +974,6 @@ html {
 }
 
 .filter-tab label {
-	padding: 1rem;
 	border-radius: .5rem;
 	color: #fddcce;
 }

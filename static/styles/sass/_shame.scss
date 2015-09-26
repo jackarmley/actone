@@ -6,7 +6,7 @@
 .filter{
     position: relative;
     width: auto;
-    max-width: 60rem;
+    max-width: 80rem;
     margin: auto;
     padding: 4rem 2rem;
     color: color('bubble');
@@ -21,7 +21,17 @@
     }
     &-label{
         @include font('emphasized');
+        margin-bottom: 0;
+        padding: 1rem;
         font-weight: bold;
+        &[for='filter-time']{
+            display: inline-block;
+            vertical-align: top;
+            + input{
+                display: inline-block;
+                width: 15rem;
+            }
+        }
     }
     &-group{
         display: inline-block;
@@ -36,7 +46,27 @@
     }
     &-section{
         &--select-skill{
+            position: relative;
             display: none;
+            &:before{
+                @include setsize(3rem);
+                content:' ';
+                position: absolute;
+                top: 4rem;
+                right: 3rem;
+                display: block;
+                background: url('../icons/arrow-keyline-down.svg') no-repeat center center/contain;
+            }
+            select{
+                @include font('emphasized');
+                margin: 0;
+                padding: 2rem;
+                border: .2rem solid darken($plum,5%);
+                -webkit-appearance: none;
+                background: color('bubble');
+                color: $plum;
+                font-weight: bold;
+            }
             &.state--active{
                 display: block;
             }
@@ -48,7 +78,6 @@
             display: none;
         }
         label{
-            padding: 1rem;
             border-radius: .5rem;
             color: color('bubble');
         }
