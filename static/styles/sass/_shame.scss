@@ -3,8 +3,50 @@
  * Add quick changes here, to be incorperated properly at a later point
  */
 
-.challengecard{
-    padding: 2rem;
-    margin-bottom: 2rem;
-    border: .1rem solid color(muted);
+.filter{
+    width: auto;
+    max-width: 60rem;
+    margin: auto;
+    &-form{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        width: 100%;
+        > *{
+            flex: 1 1;
+        }
+    }
+    &-group{
+        display: inline-block;
+    }
+    &-break{
+        text-align: center;
+    }
+    &-section{
+        &--select-skill{
+            display: none;
+            &.state--active{
+                display: block;
+            }
+        }
+    }
+    &-tab{
+        display: inline-block;
+        input{
+            display: none;
+        }
+        label{
+            padding: 1rem;
+            border-radius: .5rem;
+            background: color(muted);
+        }
+        input:checked + label,
+        input[selected] + label{
+            background: color(link);
+        }
+    }
+}
+
+.section-header{
+    text-align: center;
 }

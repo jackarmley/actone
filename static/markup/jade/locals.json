@@ -17,105 +17,136 @@
             "url" : "/"
         }
     },
+    "categories" : {
+        "ihave" : [
+            {
+                "title" : "A skill",
+                "id" : "skill",
+                "selected" : false
+            },
+            {
+                "title" : "Goodwill",
+                "id" : "goodwill",
+                "selected" : "selected"
+            }
+        ],
+        "skills" : [
+            "Web Design",
+            "Writing",
+            "Speaking Syrian",
+            "Bike Riding",
+            "Cooking"
+        ]
+    },
     "challenges" : [
         {
             "title" : "Get the message out there",
             "author" : "Jeff",
+            "avatar" : "jeff",
             "location" : "  Anywhere",
             "time" : "1 minute",
-            "end-date" : "28 September 2016",
-            "participants-so-far" : 50,
-            "participant-limit" : "unlimited",
+            "enddate" : "28 September 2016",
+            "activeparticipants" : 50,
+            "participantlimit" : "unlimited",
             "description" : "Retweet the Syrian Refugee COunter http://data.unhcr.org/syrianrefugees/regional.php"
         },
        {
             "title" : "Offer a compliment",
             "author" : "Julie",
+            "avatar" : "flo",
             "location" : "Anywhere",
             "time" : "5 minutes",
-            "end-date" : "unlimited",
-            "participants-so-far" : 50,
-            "participant-limit" : "unlimited" ,
+            "enddate" : "unlimited",
+            "activeparticipants" : 50,
+            "participantlimit" : "unlimited" ,
             "description" : "Pay someone a stranger a compliemnt"
         },
        {
             "title" : "Language Exchange",
             "author" : "Frank",
+            "avatar" : "jeff",
             "location" : "Anywhere",
             "time" : "60 minutes",
-            "end-date" : "28 September",
-            "participants-so-far" : 50,
-            "participant-limit" : 100,
+            "enddate" : "28 September",
+            "activeparticipants" : 50,
+            "participantlimit" : 100,
             "description" : "Teach someone in need basic english"
         },
        {
             "title" : "Food Drive",
             "author" : "Jack",
+            "avatar" : "jeff",
             "location" : "London",
             "time" : "30 min",
-            "end-date" : "28 September",
-            "participants-so-far" : 50,
-            "participant-limit" : "unlimited",
+            "enddate" : "28 September",
+            "activeparticipants" : 50,
+            "participantlimit" : "unlimited",
             "description" : "FOod drive for Syrian Refuggees at your local supermarket"
         },
        {
             "title" : "Code for Change",
             "author" : "Lee",
+            "avatar" : "jeff",
             "location" : "anywhere",
             "time" : "60 minutes",
-            "end-date" : "28 September",
-            "participants-so-far" : 50,
-            "participant-limit" : 100,
+            "enddate" : "28 September",
+            "activeparticipants" : 50,
+            "participantlimit" : 100,
             "description" : "UNICEF need help coding this section of there website by Sept.28th"
         },
        {
             "title" : "Cook",
             "author" : "Jeff",
+            "avatar" : "jeff",
             "location" : "Bristol",
             "time" : "120 minutes",
-            "end-date" : "28 September",
-            "participants-so-far" : 2,
-            "participant-limit" : 10,
+            "enddate" : "28 September",
+            "activeparticipants" : 2,
+            "participantlimit" : 10,
             "description" : "We need 10 cooks to help with FOodcycle breakfast service for Syrian refugees. No experiance needed."
         },
        {
             "title" : "Refugee Camp volunteer",
-            "author" : "RED CROSS INTERNATIONAL",
+            "author" : "Red Cross",
+            "avatar" : "redcross",
             "location" : "Beirut",
             "time" : " 120 minutes",
-            "end-date" : "unlimited",
-            "participants-so-far" : 20,
-            "participant-limit" : 1000,
+            "enddate" : "unlimited",
+            "activeparticipants" : 20,
+            "participantlimit" : 1000,
             "description" : "Any and all help needed at the RED CROSS Beirut Refugee. Everything from laundrey and food to medical help welcome. "
         },
        {
             "title" : "Donate 10$ to UN Syrian Relief fund",
             "author" : "UN",
+            "avatar" : "redcross",
             "location" : "anywhere",
             "time" : "5 minutes",
-            "end-date" : "28 September",
-            "participants-so-far" : 50,
-            "participant-limit" : "unlmited",
+            "enddate" : "28 September",
+            "activeparticipants" : 50,
+            "participantlimit" : "unlmited",
             "description" : "Donate 10$ to UN Syrian Relief fund"
         },
        {
             "title" : "Red Cross Clothes drive",
             "author" : "Florence",
+            "avatar" : "flo",
             "location" : "Europe",
             "time" : "30 minutes",
-            "end-date" : "28 September",
-            "participants-so-far" : 50,
-            "participant-limit" : "unlimited",
+            "enddate" : "28 September",
+            "activeparticipants" : 50,
+            "participantlimit" : "unlimited",
             "description" : "Clear out your wardrobe, donate your old clothes to the Red Cross. COllection day nation wide wednesday "
         },
         {
             "title" : "Uber FOod and Clothes Challenge",
             "author" : "Uber",
+            "avatar" : "jeff",
             "location" : "London",
             "time" : "30 minutes",
-            "end-date" : "28 September",
-            "participants-so-far" : 50,
-            "participant-limit" : "unlimted",
+            "enddate" : "28 September",
+            "activeparticipants" : 50,
+            "participantlimit" : "unlimted",
             "description" : "Uber is running a FOod and Clothes Challenge for the Syrian Refuges, they will come collect FROM, just click this link and set up a time and collection spot. "
         }
 

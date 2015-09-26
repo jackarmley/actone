@@ -1,9 +1,26 @@
 mixin challengecard(data)
     article.challengecard
-        h2= data.title
-        -each val, index in data
-            p
-                strong= index
-                br
-                != val
-
+        .challengecard-inner
+            .challengecard-author
+                p
+                    strong #{data.author}
+                    | &nbsp; challenges you to
+                img.challengecard-author-avatar(src='/static/images/#{data.avatar}.jpg' alt=data.title + ' avatar')
+            .challengecard-content
+                h2.challengecard-title= data.title
+                p
+                    | It's at
+                    strong #{data.location}
+                    | and will take #{data.time}
+                p
+                    | #{data.activeparticipants}
+                    | out of
+                    | #{data.participantlimit}
+                    | are taking #{data.author}'s challenge
+                -if(data.enddate !== 'unlimited')
+                    p
+                        | You have until #{data.enddate}
+                        | to complete this challenge
+                -else
+                    p This challenge has no time limit. Enjoy!
+                a.challengecard-cta(role="button" href='') Accept this challenge!

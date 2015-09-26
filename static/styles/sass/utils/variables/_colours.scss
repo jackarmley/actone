@@ -36,5 +36,7 @@ $colors: (
     highlight: $yellow,
     link: $red,
     linkactive:lighten($red,10%),
-    supportmessage: $supportmessage
+    supportmessage: $supportmessage,
+    background: #5AD57B,
+    bubble: #fddcce
 );

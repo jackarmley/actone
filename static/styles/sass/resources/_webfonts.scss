@@ -4,22 +4,6 @@
  * Reference webfonts with an @font-face rule
  */
 
-$fonts:(
-    stagsanslight:(
-        svgfamilyname: 'Stag Sans Web',
-        filename: 'stagsans-light-web',
-        location: '../fonts/stag',
-        filetypes: eot woff ttf svg
-    ),
-    europegold:(
-        filename: 'stagsans-light-web',
-        location: '../fonts/stag',
-        filetypes: woff ttf
-    )
-);
-
-@each $font,$props in $fonts{
-  @include fontface($font, $props...);
-}
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700,400italic');
 
 

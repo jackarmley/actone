@@ -35,7 +35,7 @@ form{
             border: 1px solid color(muted);
             border-radius: 0;
         }
-        input:not([type="radio"]):not([type="checkbox"]),
+        input:not([type="radio"]):not([type="checkbox"]):not([type="range"]),
         textarea{
             -webkit-appearance: none;
         }

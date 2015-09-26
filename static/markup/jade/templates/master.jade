@@ -14,4 +14,7 @@ head
     link(rel="stylesheet" href="static/styles/styles.css")
 body(class=viewclass)
     include ../partials/header
-    block pagecontent
+    main(role="main").page-content
+        block pagecontent
+    script(src="static/scripts/jquery.js")
+    script(src="static/scripts/app.js")

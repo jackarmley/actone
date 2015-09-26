@@ -10,9 +10,15 @@
 head{
     font-family: pointlist($breakpoints);
 }
-body{
+html{
+    //background: color(background);
+}
+.layoutwrap{
     width: auto;
     max-width: 90%;
     margin: auto;
-    padding: 2rem;
+    padding:{
+        right: 2rem;
+        left: 2rem;
+    };
 }
