@@ -6,8 +6,14 @@
 $('#filter-time').change(function(){
     var that = $(this),
         val = that.val(),
+        unit = 'minutes',
         target = $('#filter-time-label');
-    target.text(val);
+    if(val > 60){
+        val = parseFloat((val / 60)).toFixed(1);
+        unit = 'hours';
+    }
+    target.find('.int').text(val);
+    target.find('.unit').text(unit);
 });
 $('#ihave-skill').click(function(){
     $('.filter-section--select-skill').addClass('state--active');

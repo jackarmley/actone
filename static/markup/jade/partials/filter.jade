@@ -4,9 +4,11 @@ section.filter
         .filter-section
             .filter-group
                 label.filter-label(for="filter-time")
-                    span#filter-time-label 10
-                    | &nbsp; minutes
-                input(type="range" id="filter-time" min="10" max="120" step="5" value="10")
+                    span#filter-time-label
+                        span.int 10
+                        span &nbsp;
+                        span.unit minutes
+                input(type="range" id="filter-time" min="10" max="1440" step="1" value="10")
         .filter-break: span.filter-label and
         .filter-section
             -each option in locals.categories.ihave
