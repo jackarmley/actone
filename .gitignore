@@ -4,6 +4,5 @@ db.json
 *.log
 *.css
 *.css.map
-*.html
 node_modules
 node_modules/
