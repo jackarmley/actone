@@ -1,0 +1,20 @@
+section.filter
+    h2.section-header I have&hellip;
+    .filter-form
+        .filter-section
+            .filter-group
+                label(for="filter-time")
+                    span#filter-time-label 10
+                    | &nbsp; minutes
+                input(type="range" id="filter-time" min="10" max="120" step="5" value="10")
+        .filter-break and
+        .filter-section
+            -each option in locals.categories.ihave
+                div.filter-tab
+                    input(type="radio" name="ihave" id="ihave-#{option.id}" selected=option.selected)
+                    label(for="ihave-#{option.id}")= option.title
+    .filter-section.filter-section--select-skill
+        label(for='select-skill')
+        select(id='select-skill')
+            -each val in categories.skills
+                option(value=val)= val

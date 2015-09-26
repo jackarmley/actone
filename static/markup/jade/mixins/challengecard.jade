@@ -5,7 +5,7 @@ mixin challengecard(data)
                 p
                     strong #{data.author}
                     | &nbsp; challenges you to
-                img.challengecard-author-avatar(src='/static/images/#{data.avatar}.jpg' alt=data.title + ' avatar')
+                img.challengecard-author-avatar(src='./static/images/#{data.avatar}.jpg' alt=data.title + ' avatar')
             .challengecard-content
                 h2.challengecard-title= data.title
                 p

@@ -1,0 +1,83 @@
+/**
+ * Challenge card
+ */
+
+$colours: #0072bc, #c41d4a, #ffc72a, #38FF45;
+
+.challenges{
+    display: flex;
+    flex-wrap: wrap;
+}
+.challengecard{
+    $i: 0;
+    flex: 1 1 40rem;
+    padding: 2rem;
+    &-inner{
+        margin: auto;
+    }
+    &-author{
+        position: relative;
+        padding-bottom: 2rem;
+        padding-right: 2rem;
+        text-align: right;
+        &:after{
+            @include triangle('top', color(bubble), 1rem);
+            position: absolute;
+            bottom: 0;
+            right: 4rem;
+        }
+        > *{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        p{
+            margin: 0;
+            max-width: calc(100% - 8rem);
+        }
+        &-avatar{
+            @include setsize(6rem);
+            margin: 0 0 0 1rem;
+            border: .2rem solid;
+            border-radius: 1rem;
+        }
+    }
+    &-content{
+        padding: 2rem;
+        border-radius: 1rem;
+        background-color: color(bubble);
+    }
+    &-title{
+        @include font(emphasized);
+        margin: 0 0 .5em;
+    }
+    &-cta{
+        padding: 1rem 2rem;
+        border-radius: .5rem;
+        background: color('bubble');
+        text-decoration: none;
+        &:hover{
+            background-color: color('white');
+        }
+    }
+    @each $colour in $colours{
+        $listlen : length($colours);
+        &:nth-child(#{$listlen}n + #{$i}){
+            color: darken( $colour, 30% );
+            .challengecard-author{
+                &:after{
+                    border-bottom-color: $colour;
+                }
+                &-avatar{
+                    border-color: $colour;
+                }
+            }
+            .challengecard-content{
+                background-color: $colour;
+            }
+            .challengecard-cta{
+                color: darken( $colour, 30% );
+            }
+        }
+        $i: $i + 1;
+    }
+}
