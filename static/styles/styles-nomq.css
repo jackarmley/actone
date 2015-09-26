@@ -617,6 +617,19 @@ head {
 	font-family: '{""grain"": "(min-width:12.5em)",""pebble"": "(min-width:18.75em)",""mountain"": "(min-width:50em)",""eagleeyes"": "(min-device-pixel-ratio:2) and (min-resolution:192dpi)",""-webkit-eagleeyes"": "(-webkit-min-device-pixel-ratio:2) and (-webkit-min-resolution:192dpi)"}';
 }
 
+body {
+	width: auto;
+	max-width: 90%;
+	margin: auto;
+	padding: 2rem;
+}
+
+.challengecard {
+	padding: 2rem;
+	margin-bottom: 2rem;
+	border: 0.1rem solid gray;
+}
+
 .ie8-message {
 	background-color: #FFE04E;
 }

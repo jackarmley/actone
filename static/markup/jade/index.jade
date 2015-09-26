@@ -1,4 +1,5 @@
 extend templates/master
 
 block pagecontent
-	include samples/htmlelements
+    -each val in locals.challenges
+        +challengecard(val)

@@ -1,0 +1,9 @@
+mixin challengecard(data)
+    article.challengecard
+        h2= data.title
+        -each val, index in data
+            p
+                strong= index
+                br
+                != val
+

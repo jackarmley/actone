@@ -10,3 +10,9 @@
 head{
     font-family: pointlist($breakpoints);
 }
+body{
+    width: auto;
+    max-width: 90%;
+    margin: auto;
+    padding: 2rem;
+}
