@@ -1,0 +1,26 @@
+{
+    "projectinfo" : {
+        "title" : "Act One",
+        "tagline" : "A crowd sources kindness engine"
+    },
+    "sitenavlinks": {
+        "home" : {
+            "title": "Home",
+            "url" : "/"
+        },
+        "map" : {
+            "title": "Map",
+            "url" : "/"
+        },
+        "me" : {
+            "Title": "Me",
+            "url" : "me.html",
+            "subnav" : {
+                "mychallenges" : {
+                    "title" : "My challenges",
+                    "url" : "team.html"
+                }
+            }
+        }
+    }
+}
