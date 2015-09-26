@@ -2,7 +2,5 @@
 Thumbs.db
 db.json
 *.log
-*.css
-*.css.map
 node_modules
 node_modules/
