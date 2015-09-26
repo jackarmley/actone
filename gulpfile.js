@@ -45,6 +45,7 @@ gulp.task('markup', function() {
   return gulp.src(assets.markup + 'jade/*.jade')
     .pipe(data(function(file) {
       return require('./' + assets.markup + '/jade/locals.json');
+      return require('./' + assets.markup + '/jade/data.json');
     }))
     .pipe(jade({
         pretty: true

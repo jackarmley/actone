@@ -1,0 +1,12 @@
+[
+    {
+        "title" : "Challenge title",
+        "author" : "Jeff",
+        "location" : "London",
+        "time" : "5 minutes",
+        "end-date" : "28 September",
+        "participants-so-far" : 50,
+        "participant-limit" : 100,
+        "description" : "This is the descriptive text"
+    }
+]
