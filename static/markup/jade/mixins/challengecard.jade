@@ -3,15 +3,15 @@ mixin challengecard(data)
         .challengecard-inner
             .challengecard-author
                 p
+                    | Set by &nbsp;
                     strong #{data.author}
-                    | &nbsp; challenges you to
                 img.challengecard-author-avatar(src='./static/images/#{data.avatar}.jpg' alt=data.title + ' avatar')
             .challengecard-content
                 h2.challengecard-title= data.title
                 p
-                    | It's at
+                    | It's at &nbsp;
                     strong #{data.location}
-                    | and will take #{data.time}
+                    | &nbsp; and will take #{data.time}
                 p
                     | #{data.activeparticipants}
                     | out of
@@ -23,4 +23,5 @@ mixin challengecard(data)
                         | to complete this challenge
                 -else
                     p This challenge has no time limit. Enjoy!
-                a.challengecard-cta(role="button" href='') Accept this challenge!
+                footer.challengecard-footer
+                    a.challengecard-cta(role="button" href='') Accept this challenge!

@@ -26,16 +26,27 @@ $red: #aa3025;
 // @type Color
 $supportmessage: #FFE04E;
 
+// Brand colours
+$blueberry: #0072bc;
+$plum: #c41d4a;
+$butter: #ffc72a;
+$mint: #50C546;
+
+
+// Brand rhythm
+// @type List
+$brandrhythm: $blueberry, $plum, $butter, $mint;
+
 /// Colors map tying usage to variable names
 /// @type Map
 $colors: (
-    default: $black,
+    default: #333,
     black: $black,
     white: $white,
     muted: lighten($black,50%),
     highlight: $yellow,
-    link: $red,
-    linkactive:lighten($red,10%),
+    link: #0072bc,
+    linkactive:lighten(#0072bc,10%),
     supportmessage: $supportmessage,
     background: #5AD57B,
     bubble: #fddcce

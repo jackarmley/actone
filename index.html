@@ -4,17 +4,16 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Act One</title>
+  <title>Amass</title>
   <link rel="stylesheet" href="static/styles/styles.css">
 </head>
 <body class="default">
   <header role="banner" class="page-header">
-    <div class="layoutwrap"><a href="/" class="site-logo">Act One</a><span class="site-logo">A crowd sourced kindness engine</span>
-      <nav role="navigation">
+    <div class="layoutwrap"><a href="/" class="site-logo">Amass</a>
+      <nav role="navigation" class="site-nav">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/">Map</a></li>
-          <li><a href="/">My challenges</a></li>
+          <li><a href="/">Kindness Map</a></li>
+          <li><a href="/">My Challenges</a></li>
         </ul>
       </nav>
     </div>
@@ -25,19 +24,19 @@
       <div class="filter-form">
         <div class="filter-section">
           <div class="filter-group">
-            <label for="filter-time"><span id="filter-time-label">10</span>&nbsp; minutes</label>
+            <label for="filter-time" class="filter-label"><span id="filter-time-label">10</span>&nbsp; minutes</label>
             <input type="range" id="filter-time" min="10" max="120" step="5" value="10">
           </div>
         </div>
-        <div class="filter-break">and</div>
+        <div class="filter-break"><span class="filter-label">and</span></div>
         <div class="filter-section">
           <div class="filter-tab">
             <input type="radio" name="ihave" id="ihave-skill">
-            <label for="ihave-skill">A skill</label>
+            <label for="ihave-skill" class="filter-label">A Skill</label>
           </div>
           <div class="filter-tab">
             <input type="radio" name="ihave" id="ihave-goodwill" selected="selected">
-            <label for="ihave-goodwill">Goodwill</label>
+            <label for="ihave-goodwill" class="filter-label">Goodwill</label>
           </div>
         </div>
       </div>
@@ -49,215 +48,250 @@
           <option value="Speaking Syrian">Speaking Syrian</option>
           <option value="Bike Riding">Bike Riding</option>
           <option value="Cooking">Cooking</option>
+          <option value="Hair dressing">Hair dressing</option>
         </select>
       </div>
     </section>
-    <h2 class="section-header">I challenge myself to&hellip;</h2>
     <section class="challenges">
-      <article class="challengecard">
-        <div class="challengecard-inner">
-          <div class="challengecard-author">
-            <p><strong>Jeff</strong>&nbsp; challenges you to</p><img src="./static/images/jeff.jpg" alt="Get the message out there avatar" class="challengecard-author-avatar"/>
+      <h2 class="section-header">To challenge myself to&hellip;</h2>
+      <div class="challenges-inner">
+        <article class="challengecard">
+          <div class="challengecard-inner">
+            <div class="challengecard-author">
+              <p>Set by &nbsp;<strong>Jeff</strong></p><img src="./static/images/jeff.jpg" alt="Get the message out there avatar" class="challengecard-author-avatar"/>
+            </div>
+            <div class="challengecard-content">
+              <h2 class="challengecard-title">Get the message out there</h2>
+              <p>It's at &nbsp;<strong>  Anywhere</strong>&nbsp; and will take 1 minute</p>
+              <p>
+                50
+                out of
+                unlimited
+                are taking Jeff's challenge
+              </p>
+              <p>
+                You have until 28 September 2016
+                to complete this challenge
+              </p>
+              <footer class="challengecard-footer"><a role="button" href="" class="challengecard-cta">Accept this challenge!</a></footer>
+            </div>
           </div>
-          <div class="challengecard-content">
-            <h2 class="challengecard-title">Get the message out there</h2>
-            <p>It's at<strong>  Anywhere</strong>and will take 1 minute</p>
-            <p>
-              50
-              out of
-              unlimited
-              are taking Jeff's challenge
-            </p>
-            <p>
-              You have until 28 September 2016
-              to complete this challenge
-            </p><a role="button" href="" class="challengecard-cta">Accept this challenge!</a>
+        </article>
+        <article class="challengecard">
+          <div class="challengecard-inner">
+            <div class="challengecard-author">
+              <p>Set by &nbsp;<strong>Julie</strong></p><img src="./static/images/flo.jpg" alt="Offer a compliment avatar" class="challengecard-author-avatar"/>
+            </div>
+            <div class="challengecard-content">
+              <h2 class="challengecard-title">Offer a compliment</h2>
+              <p>It's at &nbsp;<strong>Anywhere</strong>&nbsp; and will take 5 minutes</p>
+              <p>
+                50
+                out of
+                unlimited
+                are taking Julie's challenge
+              </p>
+              <p>This challenge has no time limit. Enjoy!</p>
+              <footer class="challengecard-footer"><a role="button" href="" class="challengecard-cta">Accept this challenge!</a></footer>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="challengecard">
-        <div class="challengecard-inner">
-          <div class="challengecard-author">
-            <p><strong>Julie</strong>&nbsp; challenges you to</p><img src="./static/images/flo.jpg" alt="Offer a compliment avatar" class="challengecard-author-avatar"/>
+        </article>
+        <article class="challengecard">
+          <div class="challengecard-inner">
+            <div class="challengecard-author">
+              <p>Set by &nbsp;<strong>Frank</strong></p><img src="./static/images/magoo.jpg" alt="Language Exchange avatar" class="challengecard-author-avatar"/>
+            </div>
+            <div class="challengecard-content">
+              <h2 class="challengecard-title">Language Exchange</h2>
+              <p>It's at &nbsp;<strong>Anywhere</strong>&nbsp; and will take 60 minutes</p>
+              <p>
+                50
+                out of
+                100
+                are taking Frank's challenge
+              </p>
+              <p>
+                You have until 28 September
+                to complete this challenge
+              </p>
+              <footer class="challengecard-footer"><a role="button" href="" class="challengecard-cta">Accept this challenge!</a></footer>
+            </div>
           </div>
-          <div class="challengecard-content">
-            <h2 class="challengecard-title">Offer a compliment</h2>
-            <p>It's at<strong>Anywhere</strong>and will take 5 minutes</p>
-            <p>
-              50
-              out of
-              unlimited
-              are taking Julie's challenge
-            </p>
-            <p>This challenge has no time limit. Enjoy!</p><a role="button" href="" class="challengecard-cta">Accept this challenge!</a>
+        </article>
+        <article class="challengecard">
+          <div class="challengecard-inner">
+            <div class="challengecard-author">
+              <p>Set by &nbsp;<strong>Jack</strong></p><img src="./static/images/lovers.jpg" alt="Food Drive avatar" class="challengecard-author-avatar"/>
+            </div>
+            <div class="challengecard-content">
+              <h2 class="challengecard-title">Food Drive</h2>
+              <p>It's at &nbsp;<strong>London</strong>&nbsp; and will take 30 min</p>
+              <p>
+                50
+                out of
+                unlimited
+                are taking Jack's challenge
+              </p>
+              <p>
+                You have until 28 September
+                to complete this challenge
+              </p>
+              <footer class="challengecard-footer"><a role="button" href="" class="challengecard-cta">Accept this challenge!</a></footer>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="challengecard">
-        <div class="challengecard-inner">
-          <div class="challengecard-author">
-            <p><strong>Frank</strong>&nbsp; challenges you to</p><img src="./static/images/jeff.jpg" alt="Language Exchange avatar" class="challengecard-author-avatar"/>
+        </article>
+        <article class="challengecard">
+          <div class="challengecard-inner">
+            <div class="challengecard-author">
+              <p>Set by &nbsp;<strong>Lee</strong></p><img src="./static/images/peter.jpg" alt="Code for Change avatar" class="challengecard-author-avatar"/>
+            </div>
+            <div class="challengecard-content">
+              <h2 class="challengecard-title">Code for Change</h2>
+              <p>It's at &nbsp;<strong>anywhere</strong>&nbsp; and will take 60 minutes</p>
+              <p>
+                50
+                out of
+                100
+                are taking Lee's challenge
+              </p>
+              <p>
+                You have until 28 September
+                to complete this challenge
+              </p>
+              <footer class="challengecard-footer"><a role="button" href="" class="challengecard-cta">Accept this challenge!</a></footer>
+            </div>
           </div>
-          <div class="challengecard-content">
-            <h2 class="challengecard-title">Language Exchange</h2>
-            <p>It's at<strong>Anywhere</strong>and will take 60 minutes</p>
-            <p>
-              50
-              out of
-              100
-              are taking Frank's challenge
-            </p>
-            <p>
-              You have until 28 September
-              to complete this challenge
-            </p><a role="button" href="" class="challengecard-cta">Accept this challenge!</a>
+        </article>
+        <article class="challengecard">
+          <div class="challengecard-inner">
+            <div class="challengecard-author">
+              <p>Set by &nbsp;<strong>Jeff</strong></p><img src="./static/images/jeff.jpg" alt="Cook for Foodcycle avatar" class="challengecard-author-avatar"/>
+            </div>
+            <div class="challengecard-content">
+              <h2 class="challengecard-title">Cook for Foodcycle</h2>
+              <p>It's at &nbsp;<strong>Bristol</strong>&nbsp; and will take 120 minutes</p>
+              <p>
+                2
+                out of
+                10
+                are taking Jeff's challenge
+              </p>
+              <p>
+                You have until 28 September
+                to complete this challenge
+              </p>
+              <footer class="challengecard-footer"><a role="button" href="" class="challengecard-cta">Accept this challenge!</a></footer>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="challengecard">
-        <div class="challengecard-inner">
-          <div class="challengecard-author">
-            <p><strong>Jack</strong>&nbsp; challenges you to</p><img src="./static/images/jeff.jpg" alt="Food Drive avatar" class="challengecard-author-avatar"/>
+        </article>
+        <article class="challengecard">
+          <div class="challengecard-inner">
+            <div class="challengecard-author">
+              <p>Set by &nbsp;<strong>Red Cross</strong></p><img src="./static/images/redcross.jpg" alt="Help out at a Refugee Camp avatar" class="challengecard-author-avatar"/>
+            </div>
+            <div class="challengecard-content">
+              <h2 class="challengecard-title">Help out at a Refugee Camp</h2>
+              <p>It's at &nbsp;<strong>Beirut</strong>&nbsp; and will take  120 minutes</p>
+              <p>
+                20
+                out of
+                1000
+                are taking Red Cross's challenge
+              </p>
+              <p>This challenge has no time limit. Enjoy!</p>
+              <footer class="challengecard-footer"><a role="button" href="" class="challengecard-cta">Accept this challenge!</a></footer>
+            </div>
           </div>
-          <div class="challengecard-content">
-            <h2 class="challengecard-title">Food Drive</h2>
-            <p>It's at<strong>London</strong>and will take 30 min</p>
-            <p>
-              50
-              out of
-              unlimited
-              are taking Jack's challenge
-            </p>
-            <p>
-              You have until 28 September
-              to complete this challenge
-            </p><a role="button" href="" class="challengecard-cta">Accept this challenge!</a>
+        </article>
+        <article class="challengecard">
+          <div class="challengecard-inner">
+            <div class="challengecard-author">
+              <p>Set by &nbsp;<strong>UN</strong></p><img src="./static/images/redcross.jpg" alt="Donate 10$ to UN Syrian Relief fund avatar" class="challengecard-author-avatar"/>
+            </div>
+            <div class="challengecard-content">
+              <h2 class="challengecard-title">Donate 10$ to UN Syrian Relief fund</h2>
+              <p>It's at &nbsp;<strong>anywhere</strong>&nbsp; and will take 5 minutes</p>
+              <p>
+                50
+                out of
+                unlmited
+                are taking UN's challenge
+              </p>
+              <p>
+                You have until 28 September
+                to complete this challenge
+              </p>
+              <footer class="challengecard-footer"><a role="button" href="" class="challengecard-cta">Accept this challenge!</a></footer>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="challengecard">
-        <div class="challengecard-inner">
-          <div class="challengecard-author">
-            <p><strong>Lee</strong>&nbsp; challenges you to</p><img src="./static/images/jeff.jpg" alt="Code for Change avatar" class="challengecard-author-avatar"/>
+        </article>
+        <article class="challengecard">
+          <div class="challengecard-inner">
+            <div class="challengecard-author">
+              <p>Set by &nbsp;<strong>Florence</strong></p><img src="./static/images/flo.jpg" alt="Red Cross Clothes drive avatar" class="challengecard-author-avatar"/>
+            </div>
+            <div class="challengecard-content">
+              <h2 class="challengecard-title">Red Cross Clothes drive</h2>
+              <p>It's at &nbsp;<strong>Europe</strong>&nbsp; and will take 30 minutes</p>
+              <p>
+                50
+                out of
+                unlimited
+                are taking Florence's challenge
+              </p>
+              <p>
+                You have until 28 September
+                to complete this challenge
+              </p>
+              <footer class="challengecard-footer"><a role="button" href="" class="challengecard-cta">Accept this challenge!</a></footer>
+            </div>
           </div>
-          <div class="challengecard-content">
-            <h2 class="challengecard-title">Code for Change</h2>
-            <p>It's at<strong>anywhere</strong>and will take 60 minutes</p>
-            <p>
-              50
-              out of
-              100
-              are taking Lee's challenge
-            </p>
-            <p>
-              You have until 28 September
-              to complete this challenge
-            </p><a role="button" href="" class="challengecard-cta">Accept this challenge!</a>
+        </article>
+        <article class="challengecard">
+          <div class="challengecard-inner">
+            <div class="challengecard-author">
+              <p>Set by &nbsp;<strong>Uber</strong></p><img src="./static/images/magoo.jpg" alt="Uber FOod and Clothes Challenge avatar" class="challengecard-author-avatar"/>
+            </div>
+            <div class="challengecard-content">
+              <h2 class="challengecard-title">Uber FOod and Clothes Challenge</h2>
+              <p>It's at &nbsp;<strong>London</strong>&nbsp; and will take 30 minutes</p>
+              <p>
+                50
+                out of
+                unlimted
+                are taking Uber's challenge
+              </p>
+              <p>
+                You have until 28 September
+                to complete this challenge
+              </p>
+              <footer class="challengecard-footer"><a role="button" href="" class="challengecard-cta">Accept this challenge!</a></footer>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="challengecard">
-        <div class="challengecard-inner">
-          <div class="challengecard-author">
-            <p><strong>Jeff</strong>&nbsp; challenges you to</p><img src="./static/images/jeff.jpg" alt="Cook avatar" class="challengecard-author-avatar"/>
+        </article>
+        <article class="challengecard">
+          <div class="challengecard-inner">
+            <div class="challengecard-author">
+              <p>Set by &nbsp;<strong>Vicki</strong></p><img src="./static/images/flo.jpg" alt="Give a haircut avatar" class="challengecard-author-avatar"/>
+            </div>
+            <div class="challengecard-content">
+              <h2 class="challengecard-title">Give a haircut</h2>
+              <p>It's at &nbsp;<strong>anywhere</strong>&nbsp; and will take 30 minutes</p>
+              <p>
+                5
+                out of
+                10
+                are taking Vicki's challenge
+              </p>
+              <p>
+                You have until 28 September
+                to complete this challenge
+              </p>
+              <footer class="challengecard-footer"><a role="button" href="" class="challengecard-cta">Accept this challenge!</a></footer>
+            </div>
           </div>
-          <div class="challengecard-content">
-            <h2 class="challengecard-title">Cook</h2>
-            <p>It's at<strong>Bristol</strong>and will take 120 minutes</p>
-            <p>
-              2
-              out of
-              10
-              are taking Jeff's challenge
-            </p>
-            <p>
-              You have until 28 September
-              to complete this challenge
-            </p><a role="button" href="" class="challengecard-cta">Accept this challenge!</a>
-          </div>
-        </div>
-      </article>
-      <article class="challengecard">
-        <div class="challengecard-inner">
-          <div class="challengecard-author">
-            <p><strong>Red Cross</strong>&nbsp; challenges you to</p><img src="./static/images/redcross.jpg" alt="Refugee Camp volunteer avatar" class="challengecard-author-avatar"/>
-          </div>
-          <div class="challengecard-content">
-            <h2 class="challengecard-title">Refugee Camp volunteer</h2>
-            <p>It's at<strong>Beirut</strong>and will take  120 minutes</p>
-            <p>
-              20
-              out of
-              1000
-              are taking Red Cross's challenge
-            </p>
-            <p>This challenge has no time limit. Enjoy!</p><a role="button" href="" class="challengecard-cta">Accept this challenge!</a>
-          </div>
-        </div>
-      </article>
-      <article class="challengecard">
-        <div class="challengecard-inner">
-          <div class="challengecard-author">
-            <p><strong>UN</strong>&nbsp; challenges you to</p><img src="./static/images/redcross.jpg" alt="Donate 10$ to UN Syrian Relief fund avatar" class="challengecard-author-avatar"/>
-          </div>
-          <div class="challengecard-content">
-            <h2 class="challengecard-title">Donate 10$ to UN Syrian Relief fund</h2>
-            <p>It's at<strong>anywhere</strong>and will take 5 minutes</p>
-            <p>
-              50
-              out of
-              unlmited
-              are taking UN's challenge
-            </p>
-            <p>
-              You have until 28 September
-              to complete this challenge
-            </p><a role="button" href="" class="challengecard-cta">Accept this challenge!</a>
-          </div>
-        </div>
-      </article>
-      <article class="challengecard">
-        <div class="challengecard-inner">
-          <div class="challengecard-author">
-            <p><strong>Florence</strong>&nbsp; challenges you to</p><img src="./static/images/flo.jpg" alt="Red Cross Clothes drive avatar" class="challengecard-author-avatar"/>
-          </div>
-          <div class="challengecard-content">
-            <h2 class="challengecard-title">Red Cross Clothes drive</h2>
-            <p>It's at<strong>Europe</strong>and will take 30 minutes</p>
-            <p>
-              50
-              out of
-              unlimited
-              are taking Florence's challenge
-            </p>
-            <p>
-              You have until 28 September
-              to complete this challenge
-            </p><a role="button" href="" class="challengecard-cta">Accept this challenge!</a>
-          </div>
-        </div>
-      </article>
-      <article class="challengecard">
-        <div class="challengecard-inner">
-          <div class="challengecard-author">
-            <p><strong>Uber</strong>&nbsp; challenges you to</p><img src="./static/images/jeff.jpg" alt="Uber FOod and Clothes Challenge avatar" class="challengecard-author-avatar"/>
-          </div>
-          <div class="challengecard-content">
-            <h2 class="challengecard-title">Uber FOod and Clothes Challenge</h2>
-            <p>It's at<strong>London</strong>and will take 30 minutes</p>
-            <p>
-              50
-              out of
-              unlimted
-              are taking Uber's challenge
-            </p>
-            <p>
-              You have until 28 September
-              to complete this challenge
-            </p><a role="button" href="" class="challengecard-cta">Accept this challenge!</a>
-          </div>
-        </div>
-      </article>
+        </article>
+      </div>
     </section>
   </main>
   <script src="static/scripts/jquery.js"></script>

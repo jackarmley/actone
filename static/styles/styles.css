@@ -211,7 +211,7 @@ body {
 	font-size: 140%;
 	line-height: 1.5em;
 	font-family: "arvo",sans-serif;
-	color: #000;
+	color: #333;
 }
 
 p,
@@ -405,12 +405,12 @@ abbr {
 }
 
 a {
-	color: #aa3025;
+	color: #0072bc;
 	text-decoration: underline;
 }
 
 a:hover {
-	color: #d23d30;
+	color: #0091ef;
 	text-decoration: none;
 }
 
@@ -424,27 +424,27 @@ a[href^="tel"] {
 
 ::-moz-selection {
 	color: #fff;
-	background: #aa3025;
+	background: #0072bc;
 }
 
 ::selection {
 	color: #fff;
-	background: #aa3025;
+	background: #0072bc;
 }
 
 ::-webkit-selection {
 	color: #fff;
-	background: #aa3025;
+	background: #0072bc;
 }
 
 ::-moz-selection {
 	color: #fff;
-	background: #aa3025;
+	background: #0072bc;
 }
 
 ::-ms-selection {
 	color: #fff;
-	background: #aa3025;
+	background: #0072bc;
 }
 
 form {
@@ -476,7 +476,7 @@ select {
 	box-sizing: border-box;
 	width: 100%;
 	margin: 0;
-	color: #000;
+	color: #333;
 }
 
 input,
@@ -516,21 +516,21 @@ input[type="submit"] {
 }
 
 ::-webkit-input-placeholder {
-	color: #aa3025;
+	color: #0072bc;
 }
 
 :-moz-placeholder {
-	color: #aa3025;
+	color: #0072bc;
 	opacity: 1;
 }
 
 ::-moz-placeholder {
-	color: #aa3025;
+	color: #0072bc;
 	opacity: 1;
 }
 
 :-ms-input-placeholder {
-	color: #aa3025;
+	color: #0072bc;
 }
 
 img {
@@ -563,7 +563,7 @@ figcaption {
 table {
 	width: 100%;
 	margin: 0 0 1em 0;
-	border: 1px solid #000;
+	border: 1px solid #333;
 }
 
 table,
@@ -575,14 +575,14 @@ td {
 th,
 td {
 	padding: .5em;
-	border: 1px dotted #000;
+	border: 1px dotted #333;
 	border-top: none;
 	border-right: none;
 	text-align: left;
 }
 
 thead th {
-	border-bottom: 2px solid #000;
+	border-bottom: 2px solid #333;
 }
 
 tfoot td {
@@ -592,12 +592,40 @@ tfoot td {
 }
 
 .challenges {
+	position: relative;
+	padding: 4rem 0;
+	background-color: #fddcce;
+}
+
+.challenges:before {
+	content: ' ';
+	display: block;
+	width: 0;
+	height: 0;
+	border: 2rem solid transparent;
+	border-top-color: #c41d4a;
+	position: absolute;
+	top: 0;
+	left: 50%;
+}
+
+.challenges-inner {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-align-content: space-between;
+	-ms-flex-line-pack: justify;
+	align-content: space-between;
+	width: 100%;
+}
+
+.challenges .section-header {
+	padding-right: 2rem;
+	padding-left: 2rem;
+	color: #c41d4a;
 }
 
 .challengecard {
@@ -651,12 +679,17 @@ tfoot td {
 .challengecard-content {
 	padding: 2rem;
 	border-radius: 1rem;
-	background-color: #fddcce;
+	overflow: hidden;
 }
 
 .challengecard-title {
 	font-size: 1.5em;
 	margin: 0 0 .5em;
+	color: #fddcce;
+}
+
+.challengecard-footer {
+	padding-top: 2rem;
 }
 
 .challengecard-cta {
@@ -666,16 +699,14 @@ tfoot td {
 	text-decoration: none;
 }
 
-.challengecard-cta:hover {
-	background-color: false;
-}
-
-.challengecard:nth-child(4n+0) {
-	color: #001523;
+.challengecard:nth-child(4n+0) .challengecard-title {
+	margin: -2rem -2rem 2rem;
+	padding: 2rem;
+	background: #001523;
 }
 
 .challengecard:nth-child(4n+0) .challengecard-author:after {
-	border-bottom-color: #0072bc;
+	border-bottom-color: #001523;
 }
 
 .challengecard:nth-child(4n+0) .challengecard-author-avatar {
@@ -684,18 +715,23 @@ tfoot td {
 
 .challengecard:nth-child(4n+0) .challengecard-content {
 	background-color: #0072bc;
+	color: #001523;
+	box-shadow: 0 0 0 0.1rem #001523,0 0.4rem 0 0 #001523;
 }
 
 .challengecard:nth-child(4n+0) .challengecard-cta {
-	color: #001523;
+	background-color: #001523;
+	color: #0072bc;
 }
 
-.challengecard:nth-child(4n+1) {
-	color: #3f0918;
+.challengecard:nth-child(4n+1) .challengecard-title {
+	margin: -2rem -2rem 2rem;
+	padding: 2rem;
+	background: #3f0918;
 }
 
 .challengecard:nth-child(4n+1) .challengecard-author:after {
-	border-bottom-color: #c41d4a;
+	border-bottom-color: #3f0918;
 }
 
 .challengecard:nth-child(4n+1) .challengecard-author-avatar {
@@ -704,18 +740,23 @@ tfoot td {
 
 .challengecard:nth-child(4n+1) .challengecard-content {
 	background-color: #c41d4a;
+	color: #3f0918;
+	box-shadow: 0 0 0 0.1rem #3f0918,0 0.4rem 0 0 #3f0918;
 }
 
 .challengecard:nth-child(4n+1) .challengecard-cta {
-	color: #3f0918;
+	background-color: #3f0918;
+	color: #c41d4a;
 }
 
-.challengecard:nth-child(4n+2) {
-	color: #906a00;
+.challengecard:nth-child(4n+2) .challengecard-title {
+	margin: -2rem -2rem 2rem;
+	padding: 2rem;
+	background: #906a00;
 }
 
 .challengecard:nth-child(4n+2) .challengecard-author:after {
-	border-bottom-color: #ffc72a;
+	border-bottom-color: #906a00;
 }
 
 .challengecard:nth-child(4n+2) .challengecard-author-avatar {
@@ -724,34 +765,51 @@ tfoot td {
 
 .challengecard:nth-child(4n+2) .challengecard-content {
 	background-color: #ffc72a;
+	color: #906a00;
+	box-shadow: 0 0 0 0.1rem #906a00,0 0.4rem 0 0 #906a00;
 }
 
 .challengecard:nth-child(4n+2) .challengecard-cta {
-	color: #906a00;
+	background-color: #906a00;
+	color: #ffc72a;
 }
 
-.challengecard:nth-child(4n+3) {
-	color: #009e0a;
+.challengecard:nth-child(4n+3) .challengecard-title {
+	margin: -2rem -2rem 2rem;
+	padding: 2rem;
+	background: #20571b;
 }
 
 .challengecard:nth-child(4n+3) .challengecard-author:after {
-	border-bottom-color: #38FF45;
+	border-bottom-color: #20571b;
 }
 
 .challengecard:nth-child(4n+3) .challengecard-author-avatar {
-	border-color: #38FF45;
+	border-color: #50C546;
 }
 
 .challengecard:nth-child(4n+3) .challengecard-content {
-	background-color: #38FF45;
+	background-color: #50C546;
+	color: #20571b;
+	box-shadow: 0 0 0 0.1rem #20571b,0 0.4rem 0 0 #20571b;
 }
 
 .challengecard:nth-child(4n+3) .challengecard-cta {
-	color: #009e0a;
+	background-color: #20571b;
+	color: #50C546;
+}
+
+.challengecard:hover .challengecard-author-avatar {
+	-webkit-animation: shake .1s infinite;
+	animation: shake .1s infinite;
 }
 
 head {
 	font-family: '{""grain"": "(min-width:12.5em)",""pebble"": "(min-width:18.75em)",""mountain"": "(min-width:50em)",""eagleeyes"": "(min-device-pixel-ratio:2) and (min-resolution:192dpi)",""-webkit-eagleeyes"": "(-webkit-min-device-pixel-ratio:2) and (-webkit-min-resolution:192dpi)"}';
+}
+
+html {
+	background: #c41d4a;
 }
 
 .layoutwrap {
@@ -763,14 +821,69 @@ head {
 }
 
 .page-header {
+	background-color: #981639;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
 
+.page-header .layoutwrap {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-align-content: space-between;
+	-ms-flex-line-pack: justify;
+	align-content: space-between;
+}
+
+.site-logo {
+	width: 10rem;
+	height: 10rem;
+	background: url("../images/logo.png") no-repeat center center/contain;
+	text-indent: 110%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.site-nav {
+	-webkit-flex: 1 1;
+	-ms-flex: 1 1;
+	flex: 1 1;
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center;
+	text-align: right;
+}
+
+.site-nav ul {
+	display: inline-block;
+}
+
+.site-nav li {
+	font-size: 1.2em;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 1em;
+}
+
+.site-nav a {
+	display: inline-block;
+	padding: .5em 1em;
+	border-radius: .5rem;
+	color: #fddcce;
+	background-color: #c41d4a;
+	text-decoration: none;
+}
+
 .filter {
+	position: relative;
 	width: auto;
 	max-width: 60rem;
 	margin: auto;
+	padding: 4rem 2rem;
+	color: #fddcce;
 }
 
 .filter-form {
@@ -787,9 +900,12 @@ head {
 }
 
 .filter-form>* {
-	-webkit-flex: 1 1;
-	-ms-flex: 1 1;
-	flex: 1 1;
+	margin: auto;
+}
+
+.filter-label {
+	font-size: 1.5em;
+	font-weight: bold;
 }
 
 .filter-group {
@@ -797,7 +913,13 @@ head {
 }
 
 .filter-break {
+	padding: 1rem;
 	text-align: center;
+}
+
+.filter-break .filter-label {
+	font-weight: normal;
+	font-style: italic;
 }
 
 .filter-section--select-skill {
@@ -819,15 +941,46 @@ head {
 .filter-tab label {
 	padding: 1rem;
 	border-radius: .5rem;
-	background: gray;
+	color: #fddcce;
 }
 
 .filter-tab input:checked+label,
 .filter-tab input[selected]+label {
-	background: #aa3025;
+	background: #fddcce;
+	color: #c41d4a;
 }
 
 .section-header {
+	font-size: 2em;
+	margin: 0 0 2rem;
 	text-align: center;
+}
+
+@-webkit-keyframes shake {
+
+from {
+	-webkit-transform: rotate(5deg);
+	transform: rotate(5deg);
+}
+
+to {
+	-webkit-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+}
+
+}
+
+@keyframes shake {
+
+from {
+	-webkit-transform: rotate(5deg);
+	transform: rotate(5deg);
+}
+
+to {
+	-webkit-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+}
+
 }
 

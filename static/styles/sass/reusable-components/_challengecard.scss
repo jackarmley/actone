@@ -2,11 +2,38 @@
  * Challenge card
  */
 
-$colours: #0072bc, #c41d4a, #ffc72a, #38FF45;
+@keyframes shake{
+    from{
+        transform: rotate(5deg);
+    }
+    to{
+        transform: rotate(-5deg);
+    }
+}
 
 .challenges{
-    display: flex;
-    flex-wrap: wrap;
+    position: relative;
+    padding: 4rem 0;
+    background-color: color('bubble');
+    &:before{
+        @include triangle('bottom',$plum,2rem);
+        position: absolute;
+        top: 0;
+        left: 50%;
+    }
+    &-inner{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        width: 100%;
+    }
+    .section-header{
+        padding: {
+            right: 2rem;
+            left: 2rem;
+        };
+        color: $plum;
+    }
 }
 .challengecard{
     $i: 0;
@@ -44,28 +71,33 @@ $colours: #0072bc, #c41d4a, #ffc72a, #38FF45;
     &-content{
         padding: 2rem;
         border-radius: 1rem;
-        background-color: color(bubble);
+        overflow: hidden;
     }
     &-title{
         @include font(emphasized);
         margin: 0 0 .5em;
+        color: color('bubble');
+    }
+    &-footer{
+        padding-top: 2rem;
     }
     &-cta{
         padding: 1rem 2rem;
         border-radius: .5rem;
         background: color('bubble');
         text-decoration: none;
-        &:hover{
-            background-color: color('white');
-        }
     }
-    @each $colour in $colours{
-        $listlen : length($colours);
+    @each $colour in $brandrhythm{
+        $listlen : length($brandrhythm);
         &:nth-child(#{$listlen}n + #{$i}){
-            color: darken( $colour, 30% );
+            .challengecard-title{
+                margin: -2rem -2rem 2rem;
+                padding: 2rem;
+                background: darken( $colour, 30% );
+            }
             .challengecard-author{
                 &:after{
-                    border-bottom-color: $colour;
+                    border-bottom-color: darken( $colour, 30% );
                 }
                 &-avatar{
                     border-color: $colour;
@@ -73,11 +105,21 @@ $colours: #0072bc, #c41d4a, #ffc72a, #38FF45;
             }
             .challengecard-content{
                 background-color: $colour;
+                color: darken( $colour, 30% );
+                box-shadow:
+                    0 0 0 .1rem darken( $colour, 30% ),
+                    0 .4rem 0 0 darken( $colour, 30% );
             }
             .challengecard-cta{
-                color: darken( $colour, 30% );
+                background-color: darken( $colour, 30% );
+                color: $colour;
             }
         }
         $i: $i + 1;
+    }
+    &:hover{
+        .challengecard-author-avatar{
+            animation: shake .1s infinite;
+        }
     }
 }

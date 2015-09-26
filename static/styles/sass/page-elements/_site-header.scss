@@ -3,8 +3,43 @@
  */
 
 .page-header{
+    background-color: darken($plum,10%);
     padding:{
         top: 2rem;
         bottom: 2rem;
     };
+    .layoutwrap{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+}
+.site-logo{
+    @include setsize(10rem);
+    background: url('../images/logo.png') no-repeat center center/contain;
+    text-indent: 110%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.site-nav{
+    flex: 1 1;
+    align-self: center;
+    text-align: right;
+    ul{
+        display: inline-block;
+    }
+    li{
+        @include font(1.2em);
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 1em;
+    }
+    a{
+        display: inline-block;
+        padding: .5em 1em;
+        border-radius: .5rem;
+        color: color('bubble');
+        background-color: $plum;
+        text-decoration: none;
+    }
 }

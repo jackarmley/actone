@@ -1,26 +1,22 @@
 {
     "projectinfo" : {
-        "title" : "Act One",
+        "title" : "Amass",
         "tagline" : "A crowd sourced kindness engine"
     },
     "sitenavlinks": {
-        "home" : {
-            "title": "Home",
-            "url" : "/"
-        },
         "map" : {
-            "title": "Map",
+            "title": "Kindness Map",
             "url" : "/"
         },
          "mychallenges" : {
-            "title": "My challenges",
+            "title": "My Challenges",
             "url" : "/"
         }
     },
     "categories" : {
         "ihave" : [
             {
-                "title" : "A skill",
+                "title" : "A Skill",
                 "id" : "skill",
                 "selected" : false
             },
@@ -35,7 +31,8 @@
             "Writing",
             "Speaking Syrian",
             "Bike Riding",
-            "Cooking"
+            "Cooking",
+            "Hair dressing"
         ]
     },
     "challenges" : [
@@ -64,7 +61,7 @@
        {
             "title" : "Language Exchange",
             "author" : "Frank",
-            "avatar" : "jeff",
+            "avatar" : "magoo",
             "location" : "Anywhere",
             "time" : "60 minutes",
             "enddate" : "28 September",
@@ -75,7 +72,7 @@
        {
             "title" : "Food Drive",
             "author" : "Jack",
-            "avatar" : "jeff",
+            "avatar" : "lovers",
             "location" : "London",
             "time" : "30 min",
             "enddate" : "28 September",
@@ -86,7 +83,7 @@
        {
             "title" : "Code for Change",
             "author" : "Lee",
-            "avatar" : "jeff",
+            "avatar" : "peter",
             "location" : "anywhere",
             "time" : "60 minutes",
             "enddate" : "28 September",
@@ -95,7 +92,7 @@
             "description" : "UNICEF need help coding this section of there website by Sept.28th"
         },
        {
-            "title" : "Cook",
+            "title" : "Cook for Foodcycle",
             "author" : "Jeff",
             "avatar" : "jeff",
             "location" : "Bristol",
@@ -103,10 +100,10 @@
             "enddate" : "28 September",
             "activeparticipants" : 2,
             "participantlimit" : 10,
-            "description" : "We need 10 cooks to help with FOodcycle breakfast service for Syrian refugees. No experiance needed."
+            "description" : "We need 10 cooks to help with Foodcycle breakfast service for Syrian refugees. No experiance needed."
         },
        {
-            "title" : "Refugee Camp volunteer",
+            "title" : "Help out at a Refugee Camp",
             "author" : "Red Cross",
             "avatar" : "redcross",
             "location" : "Beirut",
@@ -141,13 +138,24 @@
         {
             "title" : "Uber FOod and Clothes Challenge",
             "author" : "Uber",
-            "avatar" : "jeff",
+            "avatar" : "magoo",
             "location" : "London",
             "time" : "30 minutes",
             "enddate" : "28 September",
             "activeparticipants" : 50,
             "participantlimit" : "unlimted",
             "description" : "Uber is running a FOod and Clothes Challenge for the Syrian Refuges, they will come collect FROM, just click this link and set up a time and collection spot. "
+        },
+        {
+            "title" : "Give a haircut",
+            "author" : "Vicki",
+            "avatar" : "flo",
+            "location" : "anywhere",
+            "time" : "30 minutes",
+            "enddate" : "28 September",
+            "activeparticipants" : 5,
+            "participantlimit" : 10,
+            "description" : "We're getting a crack team of stylists down to dover to help raise spirits. A haircut can make you feel better."
         }
 
     ]

@@ -4,23 +4,35 @@
  */
 
 .filter{
+    position: relative;
     width: auto;
     max-width: 60rem;
     margin: auto;
+    padding: 4rem 2rem;
+    color: color('bubble');
     &-form{
         display: flex;
         flex-wrap: wrap;
         align-content: space-between;
         width: 100%;
         > *{
-            flex: 1 1;
+            margin: auto;
         }
+    }
+    &-label{
+        @include font('emphasized');
+        font-weight: bold;
     }
     &-group{
         display: inline-block;
     }
     &-break{
+        padding: 1rem;
         text-align: center;
+        .filter-label{
+            font-weight: normal;
+            font-style: italic;
+        }
     }
     &-section{
         &--select-skill{
@@ -38,15 +50,18 @@
         label{
             padding: 1rem;
             border-radius: .5rem;
-            background: color(muted);
+            color: color('bubble');
         }
         input:checked + label,
         input[selected] + label{
-            background: color(link);
+            background: color('bubble');
+            color: $plum;
         }
     }
 }
 
 .section-header{
+    @include font('large');
+    margin: 0 0 2rem;
     text-align: center;
 }

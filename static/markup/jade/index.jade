@@ -2,7 +2,8 @@ extend templates/master
 
 block pagecontent
     include partials/filter
-    h2.section-header I challenge myself to&hellip;
     section.challenges
-        -each val in locals.challenges
-            +challengecard(val)
+        h2.section-header To challenge myself to&hellip;
+        .challenges-inner
+            -each val in locals.challenges
+                +challengecard(val)
