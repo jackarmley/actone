@@ -1,10 +1,7 @@
 header(role="banner")
+    a.site-logo(href="/")= locals.projectinfo.title
+    span.site-logo= locals.projectinfo.tagline
     nav(role="navigation")
         ul
             -each val, index  in locals.sitenavlinks
-                li
-                    a(href=val.url)= val.title
-                    if(val.subnav)
-                        ul
-                            -each subval, index in val.subnav
-                                li: a(href=subval.url)= subval.title
+                li: a(href=val.url)= val.title
