@@ -37,8 +37,20 @@
 }
 .challengecard{
     $i: 0;
+    position: relative;
     flex: 1 1 40rem;
     padding: 2rem;
+    .accepted{
+        @include setsize(4rem);
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        display: block;
+        border-radius: 100%;
+        color: color(white);
+        line-height: 4rem;
+        text-align: center;
+    }
     &-inner{
         margin: auto;
     }
@@ -74,15 +86,34 @@
         border-radius: 1rem;
         overflow: hidden;
         background-color: color(white);
+        &.state--accepted{
+            .challengecard-header{
+                padding-right: 7rem;
+            }
+            .challengecard-cta{
+                cursor: default;
+            }
+        }
     }
     &-cta{
         @include setsize(100%);
+        @include font('emphasized');
         position: absolute;
         top: 0;
         left: 0;
-        background-color: fade-out(black,.5);
-        transform: translateX(100%);
-        color: color('bubble');
+        display: flex;
+        border-radius: 1rem;
+        color: color(white);
+        text-decoration: none;
+        transform: translateY(100%);
+        transition: .2s ease;
+        span{
+            margin: auto;
+        }
+        &:hover{
+            color: color(white);
+            text-decoration: none;
+        }
     }
     &-header{
         margin: -2rem -2rem 0;
@@ -120,6 +151,12 @@
             .challengecard-header{
                 background: $colour;
             }
+            .accepted{
+                background: darken($colour,10%);
+                box-shadow:
+                    inset 0 .2rem 0 darken($colour,20%),
+                    0 .1rem 0 color(white);
+            }
             .challengecard-author{
                 &:after{
                     border-bottom-color: $colour;
@@ -139,12 +176,19 @@
                     0 0 0 .1rem $colour,
                     0 .4rem 0 0 darken( $colour, 20% );
             }
+            .challengecard-cta{
+                background-color: fade-out($colour,.2);
+                text-shadow: 0 .2rem 0 fade-out($colour,.2);
+            }
         }
         $i: $i + 1;
     }
     &:hover{
         .challengecard-author-avatar{
             animation: shake .1s infinite;
+        }
+        .challengecard-cta{
+            transform: translateY(0);
         }
     }
 }

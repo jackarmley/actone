@@ -43,3 +43,14 @@
         text-decoration: none;
     }
 }
+.challengecount{
+    @include setsize(2rem);
+    display: inline-block;
+    margin-left: 1rem;
+    border-radius: 100%;
+    background-color: $butter;
+    color: color('default');
+    font-weight: bold;
+    line-height: 2rem;
+    text-align: center;
+}

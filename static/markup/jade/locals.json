@@ -6,11 +6,13 @@
     "sitenavlinks": {
         "map" : {
             "title": "Kindness Map",
-            "url" : "/"
+            "url" : "/",
+            "id" : "map"
         },
          "mychallenges" : {
             "title": "My Challenges",
-            "url" : "/"
+            "url" : "/",
+            "id" : "challenges"
         }
     },
     "categories" : {
@@ -57,6 +59,17 @@
             "activeparticipants" : 50,
             "participantlimit" : false ,
             "description" : "A simple compliment can make all the differnce to someone's day, and their state of mind. Take a minute and pay somebody one. It's free!"
+        },
+        {
+            "title" : "Be a phone charger",
+            "author" : "Liz",
+            "avatar" : "flo",
+            "location" : "South Sudan",
+            "time" : "4 hours",
+            "enddate" : "1 August 2016",
+            "activeparticipants" : 50,
+            "participantlimit" : false,
+            "description" : "If you have an open door and an extension lead, help your neighbours keep topped up."
         },
        {
             "title" : "Language Exchange",

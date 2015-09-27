@@ -4,4 +4,4 @@ header.page-header(role="banner")
         nav.site-nav(role="navigation")
             ul
                 -each val, index  in locals.sitenavlinks
-                    li: a(href=val.url)= val.title
+                    li: a(href=val.url class='navitem-' + val.id)= val.title
