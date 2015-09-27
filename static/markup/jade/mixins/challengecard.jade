@@ -7,21 +7,17 @@ mixin challengecard(data)
                     strong #{data.author}
                 img.challengecard-author-avatar(src='./static/images/#{data.avatar}.jpg' alt=data.title + ' avatar')
             .challengecard-content
-                h2.challengecard-title= data.title
-                p
-                    | It's at &nbsp;
-                    strong #{data.location}
-                    | &nbsp; and will take #{data.time}
-                p
-                    | #{data.activeparticipants}
-                    | out of
-                    | #{data.participantlimit}
-                    | are taking #{data.author}'s challenge
-                -if(data.enddate !== 'unlimited')
-                    p
-                        | You have until #{data.enddate}
-                        | to complete this challenge
-                -else
-                    p This challenge has no time limit. Enjoy!
-                footer.challengecard-footer
-                    a.challengecard-cta(role="button" href='') Accept this challenge!
+                header.challengecard-header
+                    h2= data.title
+                    p #{data.activeparticipants} taking part!
+                ul.challengecard-meta
+                    li.icon-location= data.location
+                    li.icon-clock= data.time
+                    -if(data.participantlimit)
+                        li.icon-user #{data.participantlimit} opportunites
+                    -else
+                        li.icon-user unlimited!
+                p.challengecard-summary
+                    != data.description
+                a.challengecard-cta(role="button" href='')
+                    span Accept this challenge!

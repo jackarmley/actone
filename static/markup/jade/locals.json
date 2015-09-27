@@ -44,8 +44,8 @@
             "time" : "1 minute",
             "enddate" : "28 September 2016",
             "activeparticipants" : 50,
-            "participantlimit" : "unlimited",
-            "description" : "Retweet the Syrian Refugee COunter http://data.unhcr.org/syrianrefugees/regional.php"
+            "participantlimit" : false,
+            "description" : "Retweet the Syrian Refugee Counter http://data.unhcr.org/syrianrefugees/regional.php"
         },
        {
             "title" : "Offer a compliment",
@@ -55,8 +55,8 @@
             "time" : "5 minutes",
             "enddate" : "unlimited",
             "activeparticipants" : 50,
-            "participantlimit" : "unlimited" ,
-            "description" : "Pay someone a stranger a compliemnt"
+            "participantlimit" : false ,
+            "description" : "A simple compliment can make all the differnce to someone's day, and their state of mind. Take a minute and pay somebody one. It's free!"
         },
        {
             "title" : "Language Exchange",
@@ -77,7 +77,7 @@
             "time" : "30 min",
             "enddate" : "28 September",
             "activeparticipants" : 50,
-            "participantlimit" : "unlimited",
+            "participantlimit" : false,
             "description" : "FOod drive for Syrian Refuggees at your local supermarket"
         },
        {
@@ -121,7 +121,7 @@
             "time" : "5 minutes",
             "enddate" : "28 September",
             "activeparticipants" : 50,
-            "participantlimit" : "unlmited",
+            "participantlimit" : false,
             "description" : "Donate 10$ to UN Syrian Relief fund"
         },
        {
@@ -132,18 +132,18 @@
             "time" : "30 minutes",
             "enddate" : "28 September",
             "activeparticipants" : 50,
-            "participantlimit" : "unlimited",
+            "participantlimit" : false,
             "description" : "Clear out your wardrobe, donate your old clothes to the Red Cross. COllection day nation wide wednesday "
         },
         {
-            "title" : "Uber FOod and Clothes Challenge",
+            "title" : "Uber Food and Clothes Challenge",
             "author" : "Uber",
             "avatar" : "magoo",
             "location" : "London",
             "time" : "30 minutes",
             "enddate" : "28 September",
             "activeparticipants" : 50,
-            "participantlimit" : "unlimted",
+            "participantlimit" : false,
             "description" : "Uber is running a FOod and Clothes Challenge for the Syrian Refuges, they will come collect FROM, just click this link and set up a time and collection spot. "
         },
         {

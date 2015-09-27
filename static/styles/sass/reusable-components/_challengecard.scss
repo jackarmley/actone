@@ -69,50 +69,75 @@
         }
     }
     &-content{
+        position: relative;
         padding: 2rem;
         border-radius: 1rem;
         overflow: hidden;
-    }
-    &-title{
-        @include font(emphasized);
-        margin: 0 0 .5em;
-        color: color('bubble');
-    }
-    &-footer{
-        padding-top: 2rem;
+        background-color: color(white);
     }
     &-cta{
+        @include setsize(100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: fade-out(black,.5);
+        transform: translateX(100%);
+        color: color('bubble');
+    }
+    &-header{
+        margin: -2rem -2rem 0;
+        padding: 2rem;
+        color: color(white);
+        h2{
+            @include font(emphasized);
+            margin: 0 0 .5em;
+        }
+        p{
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+    }
+    &-meta{
+        margin: 0 -2rem 1rem;
         padding: 1rem 2rem;
-        border-radius: .5rem;
-        background: color('bubble');
-        text-decoration: none;
+        border-bottom: .2rem solid;
+        list-style: none;
+        li{
+            display: inline-block;
+            margin: 0 1rem 0 0;
+            font-weight: bold;
+            &:before{
+                font-size: 1.2em;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+        }
     }
     @each $colour in $brandrhythm{
         $listlen : length($brandrhythm);
         &:nth-child(#{$listlen}n + #{$i}){
-            .challengecard-title{
-                margin: -2rem -2rem 2rem;
-                padding: 2rem;
-                background: darken( $colour, 30% );
+            .challengecard-header{
+                background: $colour;
             }
             .challengecard-author{
                 &:after{
-                    border-bottom-color: darken( $colour, 30% );
+                    border-bottom-color: $colour;
                 }
                 &-avatar{
                     border-color: $colour;
                 }
             }
-            .challengecard-content{
-                background-color: $colour;
-                color: darken( $colour, 30% );
-                box-shadow:
-                    0 0 0 .1rem darken( $colour, 30% ),
-                    0 .4rem 0 0 darken( $colour, 30% );
+            .challengecard-meta{
+                border-bottom-color: $colour;
+                [class^='icon']:before{
+                    color: darken( $colour, 20% );
+                }
             }
-            .challengecard-cta{
-                background-color: darken( $colour, 30% );
-                color: $colour;
+            .challengecard-content{
+                box-shadow:
+                    0 0 0 .1rem $colour,
+                    0 .4rem 0 0 darken( $colour, 20% );
             }
         }
         $i: $i + 1;
