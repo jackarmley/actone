@@ -18,15 +18,15 @@ section.filter
                             input(type="radio" name="ihave" id="ihave-#{option.id}" selected=option.selected)
                             label.filter-label(for="ihave-#{option.id}")= option.title
                 .filter-section.filter-section--select-skill.filter-section-select
-                    label.hide(for='select-skill') Select a skill
+                    label(for='select-skill') Select a skill
                     select(id='select-skill')
                         -each val in categories.skills
                             option(value=val)= val
         .filter-row
-            h2.section-header Or, I'd like to help&hellip;
+            h2.section-header Or&hellip;
             .filter-row-inner
                 .filter-section.filter-section-select
-                    label.filter-label.hide(for="filter-countries") I'd like to help&hellip;
+                    label.filter-label(for="filter-countries") I'd like to help&hellip;
                     select(id="filter-countries")
                         -each val in categories.countries
                                 option(value=val)= val

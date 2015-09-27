@@ -57,6 +57,9 @@
             width: 100%;
             max-width: 60rem;
             margin: auto;
+            label{
+                display: none;
+            }
             select{
                 margin: 0;
                 padding: 2rem;

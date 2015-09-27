@@ -1118,6 +1118,17 @@ html {
 	text-align: center;
 }
 
+.site-footer {
+	padding: 4rem 2rem;
+}
+
+.site-footer p {
+	margin-bottom: 0;
+	color: #fddcce;
+	font-weight: bold;
+	text-align: center;
+}
+
 .filter {
 	position: relative;
 	width: auto;
@@ -1184,6 +1195,10 @@ html {
 	width: 100%;
 	max-width: 60rem;
 	margin: auto;
+}
+
+.filter-section-select label {
+	display: none;
 }
 
 .filter-section-select select {

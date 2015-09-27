@@ -16,6 +16,9 @@ body(class=viewclass)
     include ../partials/header
     main(role="main").page-content
         block pagecontent
+    footer.site-footer(role='contentinfo')
+        .layoutwrap
+            p= locals.projectinfo.tagline2
     script(src="static/scripts/jquery.js")
     script(src="static/scripts/handlebars.js")
     script(src="static/scripts/app.js")
