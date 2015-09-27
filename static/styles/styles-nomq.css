@@ -1261,12 +1261,22 @@ html {
 .section-header {
 	font-size: 1.5em;
 	margin: 0 0 2rem;
+	color: #fddcce;
 	text-align: center;
 	font-size: 2em;
 }
 
-.hide {
-	display: none;
+.page-content>.section-header:first-child {
+	margin-bottom: 0;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+#map {
+	width: auto;
+	height: 60rem;
+	margin: 0 2rem;
+	border-radius: 2rem;
 }
 
 .ie8-message {

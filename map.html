@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-au"></html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Indeed</title>
+  <link rel="stylesheet" href="static/styles/styles.css">
+</head>
+<body class="default">
+  <header role="banner" class="page-header">
+    <div class="layoutwrap"><a href="/" class="site-logo">Indeed</a>
+      <nav role="navigation" class="site-nav">
+        <ul>
+          <li><a href="./map.html" class="navitem-map icon-location"><span class="text">Kindness Map</span></a></li>
+          <li><a href="/" class="navitem-challenges icon-user"><span class="text">My Challenges</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main role="main" class="page-content">
+    <h2 class="section-header">Kindness map</h2>
+    <div id="map"></div>
+  </main>
+  <footer role="contentinfo" class="site-footer">
+    <div class="layoutwrap">
+      <p>Thing globally, act locally. For real</p>
+    </div>
+  </footer>
+  <script src="static/scripts/jquery.js"></script>
+  <script src="static/scripts/handlebars.js"></script>
+  <script src="static/scripts/app.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrwpa0DgiTlKffUcoqNNg6CeG5PvYzZsU&amp;callback=initMap"></script>
+</body>

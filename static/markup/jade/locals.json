@@ -7,7 +7,7 @@
     "sitenavlinks": {
         "map" : {
             "title": "Kindness Map",
-            "url" : "/",
+            "url" : "./map.html",
             "id" : "map",
             "icon" : "location"
         },

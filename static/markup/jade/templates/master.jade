@@ -19,6 +19,7 @@ body(class=viewclass)
     footer.site-footer(role='contentinfo')
         .layoutwrap
             p= locals.projectinfo.tagline2
-    script(src="static/scripts/jquery.js")
-    script(src="static/scripts/handlebars.js")
-    script(src="static/scripts/app.js")
+    block scripts
+        script(src="static/scripts/jquery.js")
+        script(src="static/scripts/handlebars.js")
+        script(src="static/scripts/app.js")
