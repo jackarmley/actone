@@ -26,7 +26,7 @@
         flex-wrap: wrap;
         align-content: space-between;
         width: auto;
-        max-width: 120rem;
+        max-width: 122rem;
         margin: auto;
     }
     .section-header{
@@ -146,6 +146,9 @@
                 margin-right: 0;
             }
         }
+    }
+    &-summary{
+        margin-bottom: 0;
     }
     @each $colour in $brandrhythm{
         $listlen : length($brandrhythm);

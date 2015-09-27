@@ -723,7 +723,7 @@ tfoot td {
 	-ms-flex-line-pack: justify;
 	align-content: space-between;
 	width: auto;
-	max-width: 120rem;
+	max-width: 122rem;
 	margin: auto;
 }
 
@@ -873,6 +873,10 @@ tfoot td {
 
 .challengecard-meta li:last-child {
 	margin-right: 0;
+}
+
+.challengecard-summary {
+	margin-bottom: 0;
 }
 
 .challengecard:nth-child(4n+0) .challengecard-header {
