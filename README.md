@@ -7,9 +7,9 @@ Part of #peacehack 2015, run by International Alert.
 
 ## Team
 
-- Raluca
-- Maya
-- Jack
+- Raluca [@rcrisan07](https://twitter.com/rcrisan07)
+- Maya [@MayaAvidov](https://twitter.com/MayaAvidov)
+- Jack [@jackarmley](https://twitter.com/jackarmley)
 - Matt
 
 
