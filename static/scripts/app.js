@@ -80,6 +80,43 @@ var citymap = {
     population: 9000000,
     color: colours.plum
   },
+  london: {
+    center: {lat: 51.5072, lng: -0.1275},
+    population: 50000,
+    color: colours.blueberry
+  },
+  london2: {
+    center: {lat: 52.0, lng: -0.2276},
+    population: 50000,
+    color: colours.blueberry
+  },
+    london3: {
+    center: {lat: 53.0, lng: -0.4276},
+    population: 50000,
+    color: colours.blueberry
+  },
+  london4: {
+    center: {lat: 52.5, lng: -0.4276},
+    population: 50000,
+    color: colours.blueberry
+  },
+    london5: {
+    center: {lat: 52.0, lng: -0.0276},
+    population: 50000,
+    color: colours.blueberry
+  },
+    london6: {
+    center: {lat: 53.0, lng: 0.1276},
+    population: 50000,
+    color: colours.blueberry
+  },
+  london7: {
+    center: {lat: 52.5, lng: 0.2276},
+    population: 50000,
+    color: colours.blueberry
+  },
+
+
   bogota: {
     center: {lat: 4.5981, lng: -74.0758},
     population: 5000000,
@@ -93,12 +130,22 @@ var citymap = {
 
   bristol: {
     center: {lat: 51.4500, lng: -2.5833},
-    population: 2000000,
-    color: colours.plum
+    population: 100000,
+    color: colours.blueberry
   },
   bristol2: {
-    center: {lat: 51.4500, lng: -2.5833},
-    population: 1000000,
+    center: {lat: 51.7, lng: -2.5834},
+    population: 100000,
+    color: colours.blueberry
+  },
+    bristol3: {
+    center: {lat: 52.4500, lng: -1.5833},
+    population: 100000,
+    color: colours.blueberry
+  },
+  bristol4: {
+    center: {lat: 51.7, lng: -1.5834},
+    population: 100000,
     color: colours.blueberry
   },
   abuja: {
@@ -109,6 +156,46 @@ var citymap = {
   abuja2: {
     center: {lat: 9.0667, lng: 7.4833},
     population: 2000000,
+    color: colours.blueberry
+  },
+  berlin1: {
+    center: {lat: 52.5167, lng: 13.3833},
+    population: 100000,
+    color: colours.blueberry
+  },
+  berlin2: {
+    center: {lat: 52.5167, lng: 14.3833},
+    population: 50000,
+    color: colours.blueberry
+  },
+  berlin3: {
+    center: {lat: 53.5167, lng: 13.3833},
+    population: 100000,
+    color: colours.blueberry
+  },
+  berlin4: {
+    center: {lat: 51.5167, lng: 14.3833},
+    population: 200000,
+    color: colours.blueberry
+  },
+  madrid1: {
+    center: {lat: 40.4000, lng: -3.7167},
+    population: 100000,
+    color: colours.blueberry
+  },
+  madrid2: {
+    center: {lat: 41.4000, lng: -3.7167},
+    population: 50000,
+    color: colours.blueberry
+  },
+  madrid3: {
+    center: {lat: 40.4000, lng: -2.7167},
+    population: 100000,
+    color: colours.blueberry
+  },
+  madrid4: {
+    center: {lat: 39.4000, lng: -1.7167},
+    population: 200000,
     color: colours.blueberry
   },
  beirut: {
