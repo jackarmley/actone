@@ -45,7 +45,23 @@ $('.challengecard-cta').click(function(e){
     e.preventDefault();
 });
 
+$('.map .kindness-meter-limit').each(function(){
 
+});
+
+if($('body').hasClass('map')){
+    var int = $('.kindness-meter-int');
+    var val = 500;
+    var ceil = 800;
+    var i = 0;
+    var intID = setInterval(function(){
+        int.text(val + i);
+        i=i+10;
+        if(i >= ceil){
+            window.clearInterval(intID);
+        }
+    },500);
+}
 
 // This example creates circles on the map, representing populations in North
 // America.
@@ -155,5 +171,13 @@ function initMap() {
   }
 }
 
+var path = document.location.pathname.replace('/','./');
+$('.site-nav a').each(function(){
+    var href = $(this).attr('href');
+    if(path === href){
+        $(this).addClass('state--current');
+    }
+
+});
 
 

@@ -1093,6 +1093,19 @@ html {
 	text-decoration: none;
 }
 
+.site-nav a:hover {
+	color: #fff;
+}
+
+.site-nav a.state--current {
+	background-color: #fddcce;
+	color: #c41d4a;
+}
+
+.site-nav a.state--current:hover {
+	color: #c41d4a;
+}
+
 .site-nav .text {
 	display: none;
 }
@@ -1277,6 +1290,39 @@ html {
 	height: 60rem;
 	margin: 0 2rem;
 	border-radius: 2rem;
+}
+
+.kindness-meter {
+	margin-bottom: 0;
+	padding-bottom: 2rem;
+	color: #fddcce;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.kindness-meter .btn {
+	margin-top: 1rem;
+}
+
+.kindness-meter .btn {
+	margin-top: 0;
+	margin-left: 1rem;
+}
+
+.btn {
+	display: inline-block;
+	padding: 1rem 2rem;
+	border-radius: .5rem;
+	background-color: #0072bc;
+	box-shadow: 0 0.5rem 0 0 #003456;
+	color: #fddcce;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.btn:hover {
+	color: #fff;
+	background-color: #0063a3;
 }
 
 .ie8-message {

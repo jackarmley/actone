@@ -1,7 +1,15 @@
 extend templates/master
 
+block vars
+    -var viewclass = 'map';
+
 block pagecontent
     h2.section-header Kindness map
+    p.kindness-meter
+        strong.kindness-meter-int 500
+        | &nbsp;people in 50 locations are being kind to one another.
+        | &nbsp;
+        a.btn(role='button' href='./') Join them now!
     #map
 
 append scripts

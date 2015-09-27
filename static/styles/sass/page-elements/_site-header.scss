@@ -44,6 +44,16 @@
         color: color('bubble');
         background-color: $plum;
         text-decoration: none;
+        &:hover{
+            color: color(white);
+        }
+        &.state--current{
+            background-color: color('bubble');
+            color: $plum;
+            &:hover{
+                color: $plum;
+            }
+        }
     }
     .text{
         display: none;

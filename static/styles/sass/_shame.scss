@@ -136,3 +136,34 @@
     margin: 0 2rem;
     border-radius: 2rem;
 }
+.kindness-meter{
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+    color: color('bubble');
+    text-align: center;
+    .btn{
+        margin-top: 1rem;
+    }
+    @include breakpoint('pebble'){
+        @include font('emphasized');
+        .btn{
+            margin-top: 0;
+            margin-left: 1rem;
+        }
+    }
+
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    background-color: $blueberry;
+    box-shadow: 0 .5rem 0 0 darken($blueberry,20%);
+    color: color('bubble');
+    text-decoration: none;
+    cursor: pointer;
+    &:hover{
+        color: color(white);
+        background-color: darken($blueberry,5%);
+    }
+}
