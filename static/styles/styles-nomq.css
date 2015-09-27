@@ -1279,12 +1279,6 @@ html {
 	font-size: 2em;
 }
 
-.page-content>.section-header:first-child {
-	margin-bottom: 0;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-}
-
 #map {
 	width: auto;
 	height: 60rem;
@@ -1301,10 +1295,15 @@ html {
 }
 
 .kindness-meter .btn {
+	display: block;
+	max-width: 20rem;
 	margin-top: 1rem;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .kindness-meter .btn {
+	display: inline-block;
 	margin-top: 0;
 	margin-left: 1rem;
 }
@@ -1323,6 +1322,17 @@ html {
 .btn:hover {
 	color: #fff;
 	background-color: #0063a3;
+}
+
+.pagehead {
+	padding-right: 2rem;
+	padding-left: 2rem;
+}
+
+.pagehead .section-header {
+	margin-bottom: 0;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
 .ie8-message {

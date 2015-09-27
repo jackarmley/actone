@@ -123,13 +123,6 @@
         @include font('large');
     }
 }
-.page-content{
-    > .section-header:first-child{
-        margin-bottom: 0;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-}
 #map{
     width: auto;
     height: 60rem;
@@ -142,11 +135,16 @@
     color: color('bubble');
     text-align: center;
     .btn{
+        display: block;
+        max-width: 20rem;
         margin-top: 1rem;
+        margin-right: auto;
+        margin-left: auto;
     }
     @include breakpoint('pebble'){
         @include font('emphasized');
         .btn{
+            display: inline-block;
             margin-top: 0;
             margin-left: 1rem;
         }
@@ -165,5 +163,16 @@
     &:hover{
         color: color(white);
         background-color: darken($blueberry,5%);
+    }
+}
+.pagehead{
+    padding:{
+        right: 2rem;
+        left: 2rem;
+    };
+    .section-header{
+        margin-bottom: 0;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 }
