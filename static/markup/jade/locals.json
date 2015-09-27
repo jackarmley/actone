@@ -13,7 +13,7 @@
         },
          "mychallenges" : {
             "title": "My Challenges",
-            "url" : "/",
+            "url" : "./",
             "id" : "challenges",
             "icon" : "user"
         }

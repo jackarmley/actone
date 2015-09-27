@@ -25,7 +25,9 @@
         display: flex;
         flex-wrap: wrap;
         align-content: space-between;
-        width: 100%;
+        width: auto;
+        max-width: 120rem;
+        margin: auto;
     }
     .section-header{
         padding: {

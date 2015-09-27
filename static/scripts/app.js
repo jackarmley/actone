@@ -198,17 +198,57 @@ var citymap = {
     population: 200000,
     color: colours.blueberry
   },
+    buc1: {
+    center: {lat: 44.4268, lng: 26.1025},
+    population: 100000,
+    color: colours.blueberry
+  },
+  buc2: {
+    center: {lat: 45.4268, lng: 26.1025},
+    population: 100000,
+    color: colours.blueberry
+  },
+  buc3: {
+    center: {lat: 44.4268, lng: 27.1025},
+    population: 100000,
+    color: colours.blueberry
+  },
+  buc4: {
+    center: {lat: 43.4268, lng: 26.1025},
+    population: 200000,
+    color: colours.blueberry
+  },
+  bombay1: {
+    center: {lat: 18.975, lng: 72.8258},
+    population: 100000,
+    color: colours.blueberry
+  },
+  bombay2: {
+    center: {lat: 17.975, lng: 72.8258},
+    population: 100000,
+    color: colours.blueberry
+  },
+  bombay3: {
+    center: {lat: 18.975, lng: 71.8258},
+    population: 100000,
+    color: colours.blueberry
+  },
+  bombay4: {
+    center: {lat: 19.975, lng: 73.8258},
+    population: 200000,
+    color: colours.blueberry
+  },
  beirut: {
     center: {lat: 33.8869, lng: 35.5131},
     population: 4000000,
-    color: colours.blueberry
+    color: colours.plum
   }
 };
 
 function initMap() {
   // Create the map.
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 5,
+    zoom: 3,
     center: {lat: 33.8869, lng: 35.5131},
     mapTypeId: google.maps.MapTypeId.ROADMAP
   });

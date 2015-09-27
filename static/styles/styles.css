@@ -722,7 +722,9 @@ tfoot td {
 	-webkit-align-content: space-between;
 	-ms-flex-line-pack: justify;
 	align-content: space-between;
-	width: 100%;
+	width: auto;
+	max-width: 120rem;
+	margin: auto;
 }
 
 .challenges .section-header {
@@ -1029,7 +1031,7 @@ html {
 
 .layoutwrap {
 	width: auto;
-	max-width: 90%;
+	max-width: 100em;
 	margin: auto;
 	padding-right: 2rem;
 	padding-left: 2rem;
@@ -1114,8 +1116,8 @@ html {
 	display: inline-block;
 	margin-left: 1rem;
 	border-radius: 100%;
-	background-color: #ffc72a;
-	color: #333;
+	background-color: #c41d4a;
+	color: #fff;
 	font-weight: bold;
 	line-height: 2rem;
 	text-align: center;
@@ -1267,7 +1269,6 @@ html {
 #map {
 	width: auto;
 	height: 60rem;
-	margin: 0 2rem;
 	border-radius: 2rem;
 }
 
