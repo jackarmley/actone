@@ -1096,7 +1096,7 @@ html {
 }
 
 .site-nav .text {
-	display: block;
+	display: inline-block;
 }
 
 .site-nav a:before {

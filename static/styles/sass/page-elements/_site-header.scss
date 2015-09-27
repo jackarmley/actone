@@ -46,7 +46,7 @@
     }
     @include breakpoint('pebble'){
         .text{
-            display: block;
+            display: inline-block;
         }
         a:before{
             display: none;

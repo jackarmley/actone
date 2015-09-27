@@ -1242,7 +1242,7 @@ html {
 @media (min-width: 37.5em) {
 
 .site-nav .text {
-	display: block;
+	display: inline-block;
 }
 
 .site-nav a:before {
