@@ -1054,8 +1054,8 @@ html {
 }
 
 .site-logo {
-	width: 15rem;
-	height: 7rem;
+	width: 10rem;
+	height: 5rem;
 	background: url("../images/logo.svg") no-repeat center center/contain;
 	text-indent: 110%;
 	white-space: nowrap;
@@ -1240,6 +1240,11 @@ html {
 }
 
 @media (min-width: 37.5em) {
+
+.site-logo {
+	width: 15rem;
+	height: 7rem;
+}
 
 .site-nav .text {
 	display: inline-block;

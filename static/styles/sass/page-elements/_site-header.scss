@@ -15,11 +15,15 @@
     }
 }
 .site-logo{
-    @include setsize(15rem 7rem);
+    @include setsize(10rem 5rem);
     background: url('../images/logo.svg') no-repeat center center/contain;
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
+    @include breakpoint('pebble'){
+        @include setsize(15rem 7rem);
+
+    }
 }
 .site-nav{
     flex: 1 1;
