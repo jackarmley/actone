@@ -1147,10 +1147,10 @@ html {
 }
 
 .filter-label {
-	font-size: 1.5em;
 	margin-bottom: 0;
 	padding: 1rem;
 	font-weight: bold;
+	font-size: 1.5em;
 }
 
 .filter-label[for='filter-time'] {
@@ -1185,7 +1185,6 @@ html {
 }
 
 .filter-section-select select {
-	font-size: 1.5em;
 	margin: 0;
 	padding: 2rem;
 	border: 0.2rem solid #ae1a42;
@@ -1193,17 +1192,20 @@ html {
 	background: #fddcce;
 	color: #c41d4a;
 	font-weight: bold;
+	font-size: 1.5em;
 }
 
 .filter-section-select:before {
-	width: 3rem;
-	height: 3rem;
+	width: 2rem;
+	height: 2rem;
 	content: ' ';
 	position: absolute;
 	top: 2rem;
 	right: 3rem;
 	display: block;
 	background: url("../icons/arrow-keyline-down.svg") no-repeat center center/contain;
+	width: 3rem;
+	height: 3rem;
 }
 
 .filter-section--select-skill {
@@ -1240,9 +1242,10 @@ html {
 }
 
 .section-header {
-	font-size: 2em;
+	font-size: 1.5em;
 	margin: 0 0 2rem;
 	text-align: center;
+	font-size: 2em;
 }
 
 .hide {

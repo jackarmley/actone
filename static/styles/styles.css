@@ -1139,7 +1139,6 @@ html {
 }
 
 .filter-label {
-	font-size: 1.5em;
 	margin-bottom: 0;
 	padding: 1rem;
 	font-weight: bold;
@@ -1177,7 +1176,6 @@ html {
 }
 
 .filter-section-select select {
-	font-size: 1.5em;
 	margin: 0;
 	padding: 2rem;
 	border: 0.2rem solid #ae1a42;
@@ -1188,8 +1186,8 @@ html {
 }
 
 .filter-section-select:before {
-	width: 3rem;
-	height: 3rem;
+	width: 2rem;
+	height: 2rem;
 	content: ' ';
 	position: absolute;
 	top: 2rem;
@@ -1232,7 +1230,7 @@ html {
 }
 
 .section-header {
-	font-size: 2em;
+	font-size: 1.5em;
 	margin: 0 0 2rem;
 	text-align: center;
 }
@@ -1249,6 +1247,23 @@ html {
 
 .site-nav a:before {
 	display: none;
+}
+
+.filter-label {
+	font-size: 1.5em;
+}
+
+.filter-section-select select {
+	font-size: 1.5em;
+}
+
+.filter-section-select:before {
+	width: 3rem;
+	height: 3rem;
+}
+
+.section-header {
+	font-size: 2em;
 }
 
 }
