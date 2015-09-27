@@ -73,7 +73,7 @@
 
 }
 
-@media (min-width: 18.75em) {
+@media (min-width: 37.5em) {
 
 .breakpointguide-label {
 	background: #66ef34;
@@ -84,7 +84,7 @@
 }
 
 .breakpointguide-value:before {
-	content: "min-width: 300px";
+	content: "min-width: 600px";
 }
 
 }

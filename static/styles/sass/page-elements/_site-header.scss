@@ -15,8 +15,8 @@
     }
 }
 .site-logo{
-    @include setsize(10rem);
-    background: url('../images/logo.png') no-repeat center center/contain;
+    @include setsize(15rem 7rem);
+    background: url('../images/logo.svg') no-repeat center center/contain;
     text-indent: 110%;
     white-space: nowrap;
     overflow: hidden;
@@ -29,7 +29,6 @@
         display: inline-block;
     }
     li{
-        @include font(1.2em);
         display: inline-block;
         vertical-align: middle;
         margin-left: 1em;
@@ -41,6 +40,17 @@
         color: color('bubble');
         background-color: $plum;
         text-decoration: none;
+    }
+    .text{
+        display: none;
+    }
+    @include breakpoint('pebble'){
+        .text{
+            display: block;
+        }
+        a:before{
+            display: none;
+        }
     }
 }
 .challengecount{

@@ -8,15 +8,20 @@
     width: auto;
     max-width: 80rem;
     margin: auto;
-    padding: 4rem 2rem;
+    padding: 2rem;
     color: color('bubble');
     &-form{
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-between;
+    }
+    &-row{
         width: 100%;
-        > *{
-            margin: auto;
+        padding: 2rem 0;
+        &-inner{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-between;
+            > *{
+                margin: auto;
+            }
         }
     }
     &-label{
@@ -45,18 +50,11 @@
         }
     }
     &-section{
-        &--select-skill{
+        &-select{
             position: relative;
-            display: none;
-            &:before{
-                @include setsize(3rem);
-                content:' ';
-                position: absolute;
-                top: 4rem;
-                right: 3rem;
-                display: block;
-                background: url('../icons/arrow-keyline-down.svg') no-repeat center center/contain;
-            }
+            width: 100%;
+            max-width: 60rem;
+            margin: auto;
             select{
                 @include font('emphasized');
                 margin: 0;
@@ -66,6 +64,23 @@
                 background: color('bubble');
                 color: $plum;
                 font-weight: bold;
+            }
+            &:before{
+                @include setsize(3rem);
+                content:' ';
+                position: absolute;
+                top: 2rem;
+                right: 3rem;
+                display: block;
+                background: url('../icons/arrow-keyline-down.svg') no-repeat center center/contain;
+            }
+        }
+        &--select-skill{
+            position: relative;
+            display: none;
+            padding-top: 2rem;
+            &:before{
+                top: 4rem;
             }
             &.state--active{
                 display: block;
@@ -93,4 +108,7 @@
     @include font('large');
     margin: 0 0 2rem;
     text-align: center;
+}
+.hide{
+    display: none;
 }

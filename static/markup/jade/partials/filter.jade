@@ -1,25 +1,32 @@
 section.filter
-    h2.section-header I have&hellip;
     .filter-form
-        .filter-section
-            .filter-group
-                label.filter-label(for="filter-time")
-                    span#filter-time-label
-                        span.int 10
-                        span &nbsp;
-                        span.unit minutes
-                input(type="range" id="filter-time" min="10" max="1440" step="1" value="10")
-        .filter-break: span.filter-label and
-        .filter-section
-            -each option in locals.categories.ihave
-                div.filter-tab
-                    input(type="radio" name="ihave" id="ihave-#{option.id}" selected=option.selected)
-                    label.filter-label(for="ihave-#{option.id}")= option.title
-    .filter-section.filter-section--select-skill
-        label(for='select-skill')
-        select(id='select-skill')
-            -each val in categories.skills
-                option(value=val)= val
-    //- h2.section-header OR
-    //- p I'd like to help&hellip;
-    //- p [Dropdown of countries here]
+        .filter-row
+            h2.section-header I have&hellip;
+            .filter-row-inner
+                .filter-section
+                    .filter-group
+                        label.filter-label(for="filter-time")
+                            span#filter-time-label
+                                span.int 10
+                                span &nbsp;
+                                span.unit minutes
+                        input(type="range" id="filter-time" min="10" max="1440" step="1" value="10")
+                .filter-break: span.filter-label and
+                .filter-section
+                    -each option in locals.categories.ihave
+                        div.filter-tab
+                            input(type="radio" name="ihave" id="ihave-#{option.id}" selected=option.selected)
+                            label.filter-label(for="ihave-#{option.id}")= option.title
+                .filter-section.filter-section--select-skill.filter-section-select
+                    label.hide(for='select-skill') Select a skill
+                    select(id='select-skill')
+                        -each val in categories.skills
+                            option(value=val)= val
+        .filter-row
+            h2.section-header Or, I'd like to help&hellip;
+            .filter-row-inner
+                .filter-section.filter-section-select
+                    label.filter-label.hide(for="filter-countries") I'd like to help&hellip;
+                    select(id="filter-countries")
+                        -each val in categories.countries
+                                option(value=val)= val
