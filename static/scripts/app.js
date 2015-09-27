@@ -298,10 +298,10 @@ function initMap() {
   }
 }
 
-var path = document.location.pathname.replace('/','./');
+var path = document.location.pathname;
 $('.site-nav a').each(function(){
     var href = $(this).attr('href');
-    if(path === href){
+    if(path === href || path.replace('/','./') === href){
         $(this).addClass('state--current');
     }
 
